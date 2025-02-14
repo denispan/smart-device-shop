@@ -8,7 +8,7 @@
 ### [Главная страница](https://denispan.github.io/smart-device-shop/index.html)
 | Desktop | Tablet | Mobile |
 |:---------------:|:--------------:|:----------------:|
-| <img width="300" alt="Desktop version" src="https://github.com/user-attachments/assets/0e2274fd-c20d-4a38-bb66-460847b2949a" /> | <img width="200" alt="Tablet version" src="https://github.com/user-attachments/assets/58c59b62-1faf-4c85-a5ba-9806f90f4034" /> | <img width="150" alt="Mobile version" src="https://github.com/user-attachments/assets/d72bb8ae-ace4-495c-aba4-5dae11da9e0b" /> |
+| <img width="300" alt="Desktop version" src="https://github.com/user-attachments/assets/568c89d4-2638-4138-8ead-494826b15e25" /> | <img width="200" alt="Tablet version" src="https://github.com/user-attachments/assets/e41710b3-5ec0-47c7-a148-7f569a57e9aa" /> | <img width="150" alt="Mobile version" src="https://github.com/user-attachments/assets/d2328826-2f2d-43e8-9a61-7ec4523b9384" /> |
 
 
 ## Технологии

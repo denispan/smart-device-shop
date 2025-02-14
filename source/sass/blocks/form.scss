@@ -1,0 +1,72 @@
+.form {
+  & input,
+  & textarea {
+    padding: 15px;
+    background-color: rgba($color-black-pearl-2, 0.15);
+    border: none;
+    border-radius: 3px;
+    color: $color-default-white;
+
+    &::placeholder {
+      color: $color-default-white;
+    }
+  }
+
+  & textarea {
+    padding: 25px 15px 15px;
+  }
+
+  & div {
+    position: relative;
+
+    & input {
+      top: 50%;
+      left: 20px;
+      transform: translateY(-50%);
+    }
+  }
+
+  & input[type="checkbox"] + label {
+    position: relative;
+    display: inline-flex;
+    font-size: 14px;
+    line-height: 16px;
+    color: $color-default-white;
+    opacity: 0.8;
+    padding-left: 26px;
+    align-items: end;
+    cursor: pointer;
+    user-select: none;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 15px;
+      height: 15px;
+      border: 1px solid $color-default-white;
+      border-radius: 2px;
+    }
+  }
+
+  & input[type="checkbox"]:focus + label {
+    outline: 2px solid $color-default-white;
+    border-radius: 2px;
+  }
+
+  & input[type="checkbox"]:checked + label::before {
+    background: url("../img/svg/agreement.svg") no-repeat center;
+  }
+
+  @include vp-1023 {
+    & textarea {
+      padding-top: 31px;
+    }
+  }
+}

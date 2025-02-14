@@ -1,0 +1,44 @@
+.contacts-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contacts-list__item {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  & a {
+    line-height: 20px;
+    color: $color-default-white;
+  }
+
+  & svg {
+    height: 25px;
+    vertical-align: top;
+    margin-right: 5px;
+    margin-left: 4px;
+
+    @include vp-1023 {
+      height: auto;
+      margin-right: 0;
+    }
+  }
+
+  & span {
+    @include vp-1023 {
+      display: none;
+    }
+  }
+
+  &:last-child span {
+    margin-left: 3px;
+  }
+
+  &:not(:last-child) {
+    @include vp-1023 {
+      margin-right: 36px;
+    }
+  }
+}

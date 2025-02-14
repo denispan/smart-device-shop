@@ -1,0 +1,145 @@
+.modal {
+  display: none;
+
+  &.is-active {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    background-color: rgba($color-default-black, 0.8);
+  }
+
+  & h2 {
+    font-family: $ff-custom;
+    font-size: 30px;
+    line-height: 27px;
+    font-weight: 400;
+    color: $color-default-white;
+    margin: 0 0 13px;
+  }
+
+  & p {
+    max-width: 400px;
+    line-height: 21.5px;
+    color: $color-default-white;
+    margin: 0 0 38px;
+  }
+
+  &--responsive {
+    .modal__content {
+      width: 100%;
+    }
+  }
+
+  &--fit-content {
+    .modal__content {
+      width: auto;
+
+      @include vp-767 {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.modal__wrapper {
+  position: relative;
+
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: start;
+  width: 100vw;
+  min-height: 100%;
+  padding: 60px 40px;
+
+  @include vp-767 {
+    padding: 60px 16px;
+  }
+}
+
+.modal__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  cursor: pointer;
+}
+
+.modal__content {
+  position: relative;
+  transform: translate(-9px, 19px);
+  display: flex;
+  flex-direction: column;
+
+  min-width: 500px;
+  max-width: 1300px;
+  min-height: 610px;
+  padding: 44px 40px 40px;
+  margin-top: 67px;
+
+  border-radius: 3px;
+
+  background-color: $color-deep-sky-blue-1;
+
+  @include vp-767 {
+    min-width: auto;
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+.modal__close-btn {
+  position: absolute;
+  top: 18px;
+  right: 14px;
+  z-index: 1;
+
+  width: 40px;
+  height: 40px;
+  padding: 0;
+
+  background: $color-transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+
+  & input {
+    margin-bottom: 22px;
+  }
+
+  & textarea {
+    min-height: 155px;
+    margin-bottom: 23px;
+  }
+
+  & div {
+    order: 1;
+  }
+
+  & button {
+    margin-bottom: 15px;
+    padding: 17px 25px 13px;
+  }
+
+  & input[type="checkbox"] + label {
+    padding-left: 35px;
+
+    &::before {
+      left: 10px;
+      bottom: 2px;
+    }
+  }
+}

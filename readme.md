@@ -2,7 +2,8 @@
 
 [denispan.github.io/smart-device-shop](https://denispan.github.io/smart-device-shop/index.html) </br></br>
 
-Лендинговая страница магазина по производству печатных плат и других электронных комплектующих</br></br>
+Лендинговая страница магазина по производству печатных плат и других электронных комплектующих</br>
+Данные из формы бронирования отправляются на мой сервер и возвращаются для проверки.</br></br>
 <strong>Адаптивная Pixel Perfect верстка по макету Figma.</strong>
 
 ### [Главная страница](https://denispan.github.io/smart-device-shop/index.html)
